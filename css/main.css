@@ -69,10 +69,3 @@ body {
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
-
-.tokenomics {
-  background-image: url(../assets/tokenomics.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}

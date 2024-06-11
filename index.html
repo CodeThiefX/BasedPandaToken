@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="text-blue-700 relative">
+  <body class="text-blue-700 relative overflow-x-hidden">
     <!-- HEADER -->
     <div>
       <!-- NAV -->
@@ -140,14 +140,24 @@
 
     <!-- TOKENOMICS -->
     <div
-      class="h-fit min-h-screen container mx-auto box-2 relative -top-12 flex justify-center items-center px-4"
+      class="h-fit min-h-screen container mx-auto box-2 relative -top-12 flex flex-col justify-center items-center px-4"
     >
       <img
         src="assets/tokenomics.jpeg"
-        class="w-full rounded-xl hidden lg:block"
+        class="w-full rounded-t-xl hidden lg:block"
         data-aos="fade-up"
       />
-      <img src="assets/tokenomics-2.jpeg" class="w-full rounded-xl lg:hidden" />
+      <img
+        src="assets/tokenomics-2.jpeg"
+        class="w-full rounded-t-xl lg:hidden"
+      />
+      <div class="bg-white text-blue-700 rounded-b-xl w-full text-center p-4">
+        0/0 tax <br />
+        lp burn <br />
+        renounced <br />
+        no team tokens <br />
+        no dev wallet <br />
+      </div>
     </div>
 
     <!-- MEMES -->
@@ -166,8 +176,42 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="bg-blue-700 text-white py-10 text-center">
+    <div
+      class="bg-blue-700 text-white py-10 text-center flex flex-col justify-center items-center"
+    >
       <p>2024 Based Panda Token</p>
+      <div class="flex gap-4">
+        <a href="https://x.com/BasedPandaToken" class="text-white">
+          <span class="sr-only">Twitter</span>
+          <svg
+            class="h-12 w-12"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+            />
+          </svg>
+        </a>
+        <a href="https://t.me/+YxFdPIeQMrMwZjI0" class="text-blue-700">
+          <span class="sr-only">Telegram</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 50 50"
+            style="fill: #ffffff"
+            class="h-11 w-11"
+          >
+            <path
+              d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375	c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219	c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966	c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693	c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351	c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z"
+            ></path>
+          </svg>
+        </a>
+      </div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

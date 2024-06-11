@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Kunfu Master";
+  src: url(../assets/kungfumasterspaced.ttf);
+}
+
+body {
+  font-family: "Kunfu Master";
+  background-image: url(../assets/Blue\ White\ Line\ Pattern.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bounce {
+  position: relative;
+  animation: moveUpDown 2s infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.shake:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px) rotate(-10deg);
+  }
+  50% {
+    transform: translateX(10px) rotate(10deg);
+  }
+  75% {
+    transform: translateX(-10px) rotate(-10deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+.box-1 {
+  --mask: radial-gradient(45px at 50% 45px, #0000 97%, #000) 50% -45px/ 83.25px
+    100%;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.box-2 {
+  --mask: linear-gradient(0deg, #0000 90px, #000 0) 0 45px,
+    radial-gradient(45px, #000 98%, #0000) 50%/83.25px 90px repeat space;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.box-3 {
+  --mask: radial-gradient(45px at top, #0000 97%, #000) 50% / 83.25px 100%;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.tokenomics {
+  background-image: url(../assets/tokenomics.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}

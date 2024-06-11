@@ -55,10 +55,6 @@ body {
     100%;
   -webkit-mask: var(--mask);
   mask: var(--mask);
-  background-image: url(../assets/bg-1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .box-2 {
@@ -72,8 +68,4 @@ body {
   --mask: radial-gradient(45px at top, #0000 97%, #000) 50% / 83.25px 100%;
   -webkit-mask: var(--mask);
   mask: var(--mask);
-  background-image: url(../assets/bg-2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
